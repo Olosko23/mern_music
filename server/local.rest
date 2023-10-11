@@ -1,0 +1,53 @@
+GET http://localhost:8080/api/v1
+
+###
+POST http://localhost:8080/api/v1/auth/login
+Content-Type: application/json
+
+{
+    "username": "olosko",
+    "password": "olosko"
+}
+###
+POST http://localhost:8080/api/v1/auth/register
+Content-Type: application/json
+
+{
+    "username": "olosko",
+    "password": "olosko"
+}
+
+###
+GET http://localhost:8080/api/v1/songs
+###
+###
+GET http://localhost:8080/api/v1/artist/all
+###
+###
+GET http://localhost:8080/api/v1/artist/646cb934782216151f181272
+###
+GET http://localhost:8080/api/v1/songs/top
+###
+
+POST http://localhost:8080/api/v1/artist/single
+Content-Type: application/json
+
+{
+    "name": "Metro",
+    "image":"https://firebasestorage.googleapis.com/v0/b/socialstream-ba300.appspot.com/o/music_app_files%2Fplaylist_cover.jpg?alt=media&token=546adcad-e9c3-402f-8a57-b7ba252100ec",
+    "type" : "Producer",
+    "bio" : "METROOOOOOOOO"
+}
+###
+
+POST http://localhost:8080/api/v1/songs/single
+Content-Type: application/json
+
+{
+    "title": "Metro",
+    "coverImage":"https://firebasestorage.googleapis.com/v0/b/socialstream-ba300.appspot.com/o/music_app_files%2Fplaylist_cover.jpg?alt=media&token=546adcad-e9c3-402f-8a57-b7ba252100ec",
+    "duration" : "3.03",
+    "artists" : "Metro",
+    "songUrl" : "https://firebasestorage.googleapis.com/v0/b/socialstream-ba300.appspot.com/o/music_app_files%2Fcovers%2Fmr_money.jpg?alt=media&token=d41d9f72-4e9d-4449-a367-2d1ba435ba54",
+    "type": "Song"
+}
